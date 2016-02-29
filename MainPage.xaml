@@ -1,0 +1,75 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="BST.MainPage"
+    mc:Ignorable="d" Height="338" Width="412">
+
+    <Grid x:Name="LayoutRoot" Background="Gray" Margin="0,0,-871,-370">
+        <TextBox x:Name="addTextBox" HorizontalAlignment="Left" Height="25" Margin="567,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.383,-1.522"/>
+        <Button x:Name="addBtn" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="750,472,0,0" RenderTransformOrigin="1.16,0.591" Click="Button_Click_Add"/>
+        <Button x:Name="removeBtn" Content="Remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="750,516,0,0" Click="Button_Click_Remove"/>
+        <Button x:Name="searchBtn" Content="Search" HorizontalAlignment="Left" Margin="750,560,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Search"/>
+
+        <sdk:Label HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="145" Margin="366,471,0,0" Content="Enter Value to Add:"/>
+        <Button x:Name="inOrderTraverseBtn" Content="InOrder Traverse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="25" Margin="366,616,0,0" Click="Button_Click_InOrder"/>
+        <TextBox x:Name="removeTextBox" HorizontalAlignment="Left" Height="25" Margin="567,515,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="searchTextBox" HorizontalAlignment="Left" Height="25" Margin="567,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <sdk:Label HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="145" Margin="366,515,0,0" Content="Enter Value To Remove:"/>
+        <sdk:Label HorizontalAlignment="Left" Height="25" Margin="366,559,0,0" VerticalAlignment="Top" Width="145" Content="Enter Value to Search:"/>
+        <Button x:Name="preOrderTraverseBtn" Content="PreOrder Traverse&#xD;&#xA;" HorizontalAlignment="Left" Margin="567,617,0,66" Width="120" Height="25" Click="Button_Click_preOrder"/>
+        <Button x:Name="postOrderTraverseBtn" Content="PostOrder Traverse&#xD;&#xA;" HorizontalAlignment="Left" Margin="750,617,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="Button_Click_postOrder"/>
+        <TextBlock x:Name="outputTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output Window" VerticalAlignment="Top" Margin="26,599,0,0" Height="13" Width="99"/>
+        <Canvas x:Name="mainSpace" HorizontalAlignment="Left" Height="442" VerticalAlignment="Top" Width="1283" Background="White"/>
+        <ListBox x:Name="traversalListBox" HorizontalAlignment="Left" Height="122" Margin="26,472,0,0" VerticalAlignment="Top" Width="324"/>
+        <TextBlock HorizontalAlignment="Left" Margin="895,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="241">
+        	<Run Text="[Add] Option allows user to add a new node with an integer value to the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="895,515,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="241">
+        	<Run Text="[Remove] Option allows user to remove an existing node in the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="895,560,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="241">
+        	<Run Text="[Search] Option allows user to search for an existing node in the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="320,660,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="217">
+        	<Run Text="[InOrder] Traverse prints the in-order traversal of the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="537,660,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="213">
+        	<Run Text="[PreOrder] Traverse prints the pre-order traversal of the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="755,660,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="221">
+        	<Run Text="[PostOrder] Traverse prints the post-order traversal of the tree."/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,471,0,0" Height="123" Width="324"/>
+        <TextBlock x:Name="welcomeTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="289" Width="728" FontSize="48" Margin="307,10,0,0">
+        	<Run Text="    "/>
+        	<LineBreak/>
+        	<Run Text="Binary Search Tree Animation"/>
+        	<LineBreak/>
+        	<Run Text="CSE 240 Honors Project (C#)"/>
+        	<LineBreak/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text=" "/>
+        </TextBlock>
+
+
+    </Grid>
+</UserControl>
+
